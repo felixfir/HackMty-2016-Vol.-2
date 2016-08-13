@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Jennifer</title> 
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">   
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            function toggleDiv(divId) {
+                $("#" + divId).toggle();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Create Account</h1>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <form>
+            <a href="javascript:toggleDiv('AccountInfo-form-group');" style="background-color: #ccc; padding: 5px 10px;">Account Information</a>
+            <div class= "AccountInfo-form-group" id="AccountInfo-form-group">
+                <div class= "form-group">
+                    <label for= "InputUserName">Username</lable>
+                        <input type="text" class= "form-control" id="InputUserName" placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>  			
+                </div>
+
+                <a href="javascript:toggleDiv('PersonalDetail-form-group');" style="background-color: #ccc; padding: 5px 10px;">Personal Detail</a>
+                <div class= "PersonalDetail-form-group" id="PersonalDetail-form-group">
+                    <div class= "form-group">
+                        <label for= "InputFirstName">First Name</lable>
+                            <input type="text" class= "form-control" id="InputFirstName" placeholder="FirstName">
+                            </div> 
+                            <div class= "form-group">
+                                <label for= "InputLastName">Last Name</lable>
+                                    <input type="text" class= "form-control" id="InputLastName" placeholder="LastName">
+                                    </div>
+                                    <div class= "form-group">
+                                        <label for= "InputDateBirth">Date of Birth</lable>
+                                            <input class="form-control" id="InputDateBirth" name="InputDateBirth" placeholder="MM/DD/YYY" type="DateBirth"/>
+                                    </div>
+                                    <div class="dropdown">
+                                        <label for= "InputCurrency">Currency</lable>
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">US Dollar
+                                                <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"> 
+                                                <li role="presentation"><a role="menuitem" href="#">Pesos MX</a></li>
+                                                <li role="presentation"><a role="menuitem" href="#">Canadian Dollar</a></li> 
+                                            </ul>
+                                    </div>
+                            </div>
+
+                            <a href="javascript:toggleDiv('ContactDetails-form-group');" style="background-color: #ccc; padding: 5px 10px;">Contact Details</a>
+                            <div class="ContactDetails-form-group" id="ContactDetails-form-group">
+                                <div class="dropdown">
+                                    <label for= "InputCountry">Country</lable>
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">Mexico
+                                            <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu2"> 
+                                            <li role="presentation"><a role="menuitem" href="#">EU</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#">Canada</a></li> 
+                                            <li role="presentation"><a role="menuitem" href="#">Brazil</a></li> 
+                                        </ul>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="InputAddress"> Address</label>
+                                    <input type="text" class="form-control" id="InputAddress" placeholder="Address">
+
+                                </div>
+
+
+                                <div class= "form-group">
+                                    <label for= "InputCity">City</lable>
+                                        <input type="text" class= "form-control" id="InputCity" placeholder="City">
+                                        </div> 
+
+                                        <div class= "form-group">
+                                            <label for= "InputPostCode">PostCode</lable>
+                                                <input type="text" class= "form-control" id="InputPostCode" placeholder="PostCode">
+                                                </div> 
+
+                                                <div class="dropdown">
+                                                    <label for= "InputStateRegion">State/Region</lable>
+                                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu3" data-toggle="dropdown">State/Region
+                                                            <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu3"> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Aguascalientes</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Baja California</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Baja California Sur</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Campeche</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Chiapas</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Chihuahua</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Coahuila</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Colima</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Distrito Federal</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Durango</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Estado de México</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Guanajuato</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Guerrero</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Hidalgo</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Jalisco</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Michoacán</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Morelos </a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Nayarit</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Nuevo León</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Oaxaca</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Puebla</a></li> 
+                                                            <li role="presentation"><a role="menuitem" href="#">Querétaro</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Quintana Roo</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">San Luis Potosí</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Sinaloa</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Sonora</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Tabasco</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Tamaulipas</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Tlaxcala</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Veracruz</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Yucatán</a></li>
+                                                            <li role="presentation"><a role="menuitem" href="#">Zacatecas</a></li>
+                                                        </ul> 
+                                                </div>   
+
+                                        </div>
+                                        <div class="chceckbox">
+
+                                            <label><input type="checkbox" value="" > I am of legal age to gamble and I accept the Terms and Conditions and Privacy Policy.</label>
+
+                                        </div>
+
+                                        <button type="register" class="btn btn-default">Register</button>
+                                        </form> 
+                                        </body>
+                                        </html>
